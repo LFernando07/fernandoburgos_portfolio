@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { github } from "../../assets";
-import { SectionWrapper } from "../../hoc";
+import { SectionWrapper } from "../../hooks";
 import { projects } from "../../constants";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         tiltMaxAngleY={30}
         glareColor="#aaa6c3"
       >
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
+        <div className="bg-tertiary flex flex-col">
           <div className="relative h-[230px] w-full">
             <img
               src={image}
@@ -71,13 +71,13 @@ const Works = () => {
       <div className="flex w-full">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
+          className="text-secondary mt-3 max-w-3xl text-[17px] text-justify leading-[30px]"
         >
           {config.sections.works.content}
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -86,4 +86,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

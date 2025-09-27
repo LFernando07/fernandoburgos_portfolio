@@ -33,62 +33,60 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
-    feedbacks: TSection;
+    education: TSection;
     works: Required<TSection>;
   };
 };
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Fernando Burgos — Portafolio Digital",
+    fullName: "Luis Fernando Burgos Perea",
+    email: "fernando.burgos.perea@outlook.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Fernando Burgos",
+    p: ["Ingeniero en Sistemas Computacionales", "Desarrollo Multiplataforma"],
   },
   contact: {
-    p: "Get in touch",
-    h2: "Contact.",
+    p: "Envia correo",
+    h2: "Contactame.",
     form: {
       name: {
-        span: "Your Name",
-        placeholder: "What's your name?",
+        span: "Nombre Completo",
+        placeholder: "¿Cuál es tu nombre?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: { span: "Correo electrónico", placeholder: "Escribe tu correo electrónico" },
       message: {
-        span: "Your Message",
-        placeholder: "What do you want to say?",
+        span: "Mensaje",
+        placeholder: "¿Qué quieres decir?",
       },
     },
   },
   sections: {
     about: {
-      p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      p: "Introducción",
+      h2: "Descripción General.",
+      content: `"Estudiante de Ingeniería en Sistemas Computacionales con formación
+       en Desarrollo de Aplicaciones Multiplataforma. Manejo de Java, Python, C#, 
+       JavaScript y experiencia en desarrollo de aplicaciones web utilizando Node.js, 
+       ExpressJS y React. 
+       Manejo de bases de datos relacionales y no relacionales (MySQL, PostgreSQL, MongoDB) 
+       y certificación en metodologías ágiles (Scrum). Me apasiona crear soluciones web modernas, 
+       rápidas y escalables."`,
     },
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "Lo que he hecho hasta ahora",
+      h2: "Experiencia laboral."
     },
-    feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+    education: {
+      p: "Camino escolar",
+      h2: "Educación - Adicionales",
     },
     works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      p: "Mi Trabajo",
+      h2: "Projectos.",
+      content: `Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos académicos y reales de mi trabajo. Cada proyecto se describe brevemente con enlaces a repositorios de código. Esto refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos eficazmente.`,
     },
   },
 };

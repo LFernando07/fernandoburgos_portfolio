@@ -3,8 +3,9 @@ import type {
   TService,
   TTechnology,
   TExperience,
-  TTestimonial,
+  TEducation,
   TProject,
+  TAditional,
 } from "../types";
 
 import {
@@ -23,29 +24,36 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  scrum,
+  itz,
+  icatmor,
+  sigecu,
+  cbtis
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
   {
     id: "about",
-    title: "About",
+    title: "Acerca De",
+  },
+  {
+    id: "education",
+    title: "Educación"
+  },
+  {
+    id: "experience",
+    title: "Experiencia",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Proyectos"
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contacto",
   },
 ];
 
@@ -55,15 +63,15 @@ const services: TService[] = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Gestión de Base de Datos",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Backend Developer",
+    icon: mobile,
+  },
+  {
+    title: "Diseño de Interfaces",
     icon: creator,
   },
 ];
@@ -106,10 +114,6 @@ const technologies: TTechnology[] = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -118,92 +122,95 @@ const technologies: TTechnology[] = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
-  },
+    name: "scrum",
+    icon: scrum,
+  }
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Servicio Social",
+    companyName: "ICATMOR Anenecuilco – Área de Recursos Materiales y Financieros",
+    icon: icatmor,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Enero – Junio 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Elaboración de más de 200 pólizas contables para cuentas institucionales usando Excel avanzado.",
+      "Gestión de inventarios con un 100% de precisión en registros.",
+      "Generación de balances mensuales para programas educativos.",
+      "Optimización de procesos de auditoría logrando reducir tiempos en un 30%."
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "Sistema de Gestión de Cursos",
+    companyName: "Instituto Tecnológico de Zacatepec",
+    icon: sigecu,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Enero - Junio 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Apliacación académica para administración de cursos con autenticación segura y autorizada por roles.",
+      "Incluye operaciones CRUD, integración de CV y Ficha Tecnica del docente.",
+      "Optimización de procesos administrativos con reducción del 40% en tiempos de gestión.",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Servicio Social - Área de Apoyo al Tecnológico",
+    companyName: "Instituto Tecnológico de Zacatepec",
+    icon: itz,
+    iconBg: "#383E56",
+    date: "Enero – Junio 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Administración de plataformas tecnológicas educativas utilizando Microsoft Teams.",
+      "Implementación de una estructura organizacional para asesorías académicas.",
+      "Conversión de documentos físicos a formato digital aplicando criterios de clasificación temática."
     ],
   },
 ];
 
-const testimonials: TTestimonial[] = [
+const schools: TEducation[] = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Instituto Tecnológico de Zacatepec – Morelos",
+    icon: itz,
+    iconBg: "#383E56",
+    degree: "Ingeniería en Sistemas Computacionales, Especialidad en Desarrollo de Aplicaciones Multiplataforma",
+    dateRange: "Agosto 2021 - Presente",
+    subject: "Asignaturas clave:",
+    achievements: [
+      "Ingeniería de Software", "Bases de Datos", "Desarrollo Web", "Aplicaciones Móviles", "Desarrollo Multiplataforma con .NET"
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+    title: "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 194 – Ayala, Morelos",
+    icon: cbtis,
+    iconBg: "#383E56",
+    degree: "Carrera Técnica en Ofimática",
+    dateRange: "2018 – 2021",
+    subject: "Asignaturas clave:",
+    achievements: [
+      "Microsoft Office", "Administración de Recursos Humanos", "Técnicas de Archivo"
+    ],
+  }
+]
+
+const additional: TAditional = {
+  name: "Información Adicional",
+  languages: ["Inglés (B1)"],
+  certifications: [
+    "Scrum Fundamentals Certified",
+    "Responsive Web Design (freeCodeCamp)"
+  ],
+  softSkills: [
+    "Proactividad",
+    "Trabajo en equipo",
+    "Comunicación efectiva",
+    "Pensamiento analítico",
+    "Liderazgo",
+    "Adaptabilidad",
+    "Resolución de problemas"
+  ],
+  availability: "Reubicación y flexibilidad horaria"
+};
+
 
 const projects: TProject[] = [
   {
@@ -269,6 +276,6 @@ const projects: TProject[] = [
     image: tripguide,
     sourceCodeLink: "https://github.com/",
   },
-];
+]
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, schools, additional, projects };

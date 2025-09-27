@@ -4,7 +4,6 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -13,6 +12,8 @@ import {
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
+import Education from "./components/sections/Education";
+import AditionalInfo from "./components/sections/AditionalInfo";
 
 const App = () => {
   useEffect(() => {
@@ -29,10 +30,11 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education />
+        <AditionalInfo />
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

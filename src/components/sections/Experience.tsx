@@ -7,7 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "../../constants";
-import { SectionWrapper } from "../../hoc";
+import { SectionWrapper } from "../../hooks";
 import { Header } from "../atoms/Header";
 import { TExperience } from "../../types";
 import { config } from "../../constants/config";
@@ -72,4 +72,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");

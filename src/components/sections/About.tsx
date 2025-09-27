@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { services } from "../../constants";
-import { SectionWrapper } from "../../hoc";
+import { SectionWrapper } from "../../hooks";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
@@ -22,7 +22,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
     tiltMaxAngleY={30}
     glareColor="#aaa6c3"
   >
-    <div className="max-w-[250px] w-full xs:w-[250px]">
+    <div className="flex flex-col">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
@@ -31,7 +31,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
           <img
             src={icon}
             alt="web-development"
-            className="h-16 w-16 object-contain"
+            className="object-contain h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-20 lg:w-20"
           />
 
           <h3 className="text-center text-[20px] font-bold text-white">
@@ -50,12 +50,12 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+        className="text-secondary mt-4 max-w-3xl text-[17px] text-justify leading-[30px]"
       >
         {config.sections.about.content}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
