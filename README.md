@@ -6,7 +6,7 @@
 ## 🌐 Live Demo
 
 Explora la demostración en vivo del proyecto:
-[reactjs18-3d-portfolio](https://fernando-portfolio.vercel.app/)
+[reactjs18-3d-portfolio](https://fernando-portafolio.vercel.app/)
 
 ## 📝 Descripción
 
