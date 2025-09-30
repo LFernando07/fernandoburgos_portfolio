@@ -24,8 +24,6 @@ import {
   mongodb,
   git,
   figma,
-  jobit,
-  tripguide,
   scrum,
   itz,
   icatmor,
