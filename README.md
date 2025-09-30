@@ -1,12 +1,12 @@
 # 3D Portfolio
 
-![demo](.github/README_ASSETS/3d-portfolio.png)
+![demo](.github/README_ASSETS/3d-portafolio.png)
 
 
 ## 🌐 Live Demo
 
 Explora la demostración en vivo del proyecto:
-[reactjs18-3d-portfolio](https://fernando-portafolio.vercel.app/)
+[fernando-portafolio](https://fernando-portafolio.vercel.app/)
 
 ## 📝 Descripción
 
