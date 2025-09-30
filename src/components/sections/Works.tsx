@@ -16,6 +16,9 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  sourceDemoLink,
+  sourceDemoIcon,
+  demo,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,7 +36,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               alt={name}
               className="h-full w-full rounded-2xl object-cover"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+            <div className="card-img_hover absolute inset-0 m-3 flex justify-between">
               <div
                 onClick={() => window.open(sourceCodeLink, "_blank")}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
@@ -44,15 +47,33 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                   className="h-1/2 w-1/2 object-contain"
                 />
               </div>
+
+              {
+                // If demo link is available, show the demo button
+                demo && (<div
+                  onClick={() => window.open(sourceDemoLink, "_blank")}
+                  className="bg-tertiary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                >
+                  <img
+                    src={sourceDemoIcon}
+                    alt="demo"
+                    className="h-1/2 w-1/2 object-contain invert"
+                  />
+                </div>)
+              }
+
             </div>
+
+
+
           </div>
           <div className="mt-5">
-            <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
+            <h3 className="text-[24px] font-bold text-white pl-2">{name}</h3>
+            <p className="text-secondary mt-2 text-[14px] text-justify p-2">{description}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              <p key={tag.name} className={`text-[14px] ${tag.color} p-2`}>
                 #{tag.name}
               </p>
             ))}

@@ -34,6 +34,9 @@ export type TProject = {
   }[];
   image: string;
   sourceCodeLink: string;
+  sourceDemoLink?: string;
+  sourceDemoIcon?: string;
+  demo?: boolean;
 } & Required<Pick<TCommonProps, "name">>;
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;

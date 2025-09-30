@@ -24,14 +24,20 @@ import {
   mongodb,
   git,
   figma,
-  carrent,
   jobit,
   tripguide,
   scrum,
   itz,
   icatmor,
   sigecu,
-  cbtis
+  cbtis,
+  linkedin,
+  github,
+  telefono,
+  whatsapp,
+  weather,
+  demo,
+  gastly
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -212,70 +218,89 @@ const additional: TAditional = {
 };
 
 
+const socials = [
+  {
+    name: "linkedIn",
+    icon: linkedin,
+    bgText: "#1d1836",
+    ref: "https://www.linkedin.com/in/luis-fernando-burgos-perea-406196382/",
+  },
+  {
+    name: "Github",
+    icon: github,
+    bgText: "#44444E",
+    ref: "https://github.com/LFernando07/",
+  },
+  {
+    name: "Telefono",
+    icon: telefono,
+    bgText: "#0D1164",
+    ref: "tel:+527352330176"
+  },
+  {
+    name: "Whatsapp",
+    icon: whatsapp,
+    bgText: "#8FA31E",
+    ref: "https://api.whatsapp.com/send?phone=7352330176"
+  }
+
+]
+
+
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Weather Wrapper App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Aplicación web que permite consultar el clima de cualquier lugar utilizando la API de Visual Crossing. El servicio muestra  información de temperatura, sensación térmica, ubicación, viento, humedad, condición y visibilidad.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux-ToolKit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: weather,
+    sourceCodeLink: "https://github.com/LFernando07/Weather_Wrapper_App",
+    sourceDemoLink: "https://weather-wrapper-app.vercel.app/",
+    sourceDemoIcon: demo,
+    demo: true,
+  },
+  {
+    name: "Gastly App",
+    description:
+      "Aplicación web para el control y manejo de gastos personales, permitiendo registrar, filtrar, visualizar los gastos apartir de una tabla y de graficas (barra, metricas y de pastel) de forma sencilla y rápida.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "prisma",
+        color: "orange-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: gastly,
+    sourceCodeLink: "https://github.com/LFernando07/Expense-Tracker",
   },
 ]
 
-export { services, technologies, experiences, schools, additional, projects };
+export { services, technologies, experiences, schools, additional, projects, socials };

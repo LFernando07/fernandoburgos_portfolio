@@ -4,8 +4,12 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import telefono from "./telefono.png";
+import whatsapp from "./whatsapp.png";
+import linkedin from "./linkedin.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import demo from "./manifestacion.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -27,7 +31,8 @@ import itz from './company/logo-tec-itz.png';
 import icatmor from './company/icatmor.png';
 import cbtis from './company/logo-cbtis.png';
 
-import carrent from "./carrent.png";
+import gastly from "./gastly.png";
+import weather from "./weather-service.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -44,6 +49,9 @@ export {
   docker,
   figma,
   git,
+  linkedin,
+  whatsapp,
+  telefono,
   html,
   javascript,
   mongodb,
@@ -53,12 +61,14 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
+  weather,
+  gastly,
   jobit,
   tripguide,
   scrum,
   itz,
   icatmor,
   sigecu,
-  cbtis
+  cbtis,
+  demo
 };

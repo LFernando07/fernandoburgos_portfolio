@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import { config } from "./constants/config";
 import Education from "./components/sections/Education";
 import AditionalInfo from "./components/sections/AditionalInfo";
+import Social from "./components/sections/Social";
 
 const App = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Social />
       </div>
     </BrowserRouter>
   );
