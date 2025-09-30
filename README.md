@@ -1,35 +1,18 @@
 # 3D Portfolio
 
-<!-- GitHub badges -->
-
-[![Latest release](https://img.shields.io/github/v/release/ladunjexa/reactjs18-3d-portfolio?label=Latest%20release&style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/releases/tag/v0.1.0)
-[![Stars](https://img.shields.io/github/stars/ladunjexa/reactjs18-3d-portfolio?style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/stargazers)
-[![Fork](https://img.shields.io/github/forks/ladunjexa/reactjs18-3d-portfolio?style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/forks)
-[![GitHub commits](https://img.shields.io/github/commit-activity/t/ladunjexa/reactjs18-3d-portfolio?style=social&logo=github)](https://github.com/ladunjexa/reactjs18-3d-portfolio/commits)
-[![Pull requests](https://img.shields.io/github/issues-pr/ladunjexa/reactjs18-3d-portfolio?style=social&logo=github)](https://github.com/ladunjexa/reactjs18-3d-portfolio/pulls)
-
 ![demo](.github/README_ASSETS/3d-portfolio.png)
 
-[![ladunjexa](https://custom-icon-badges.demolab.com/badge/made%20by%20-ladunjexa-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/luadnjexa)
-[![License](https://img.shields.io/github/license/ladunjexa/reactjs18-3d-portfolio?color=dddddd&labelColor=000000)](https://github.com/ladunjexa/reactjs18-3d-portfolio/blob/main/LICENSE)
-[![Top Language](https://img.shields.io/github/languages/top/ladunjexa/reactjs18-3d-portfolio?logo=github&logoColor=%23007ACC&label=TypeScript)](https://www.typescriptlang.org/)
-[![Contributors](https://img.shields.io/github/contributors/ladunjexa/reactjs18-3d-portfolio?style=flat&color=orange&label=Contributors)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
-![Release](https://img.shields.io/github/release/ladunjexa/reactjs18-3d-portfolio.svg)
-![PRs](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=shields)
-![deployment](https://img.shields.io/github/deployments/ladunjexa/reactjs18-3d-portfolio/Production?logo=vercel&label=Website)
-[![Known Vulnerabilities](https://snyk.io/test/github/ladunjexa/reactjs18-3d-portfolio/badge.svg)](https://snyk.io/test/github/ladunjexa/reactjs18-3d-portfolio)
 
 ## 🌐 Live Demo
 
-Explore the live demonstration of the project:
-[reactjs18-3d-portfolio](https://reactjs18-3-d-portfolio.vercel.app/)
+Explora la demostración en vivo del proyecto:
+[reactjs18-3d-portfolio](https://fernando-portfolio.vercel.app/)
 
-## 📝 Description
+## 📝 Descripción
 
-**3D Portfolio** is a well-designed and fully functional portfolio website that is built with
-React.js and Three.js. It is a fully responsive website that works well on all devices.
+**3D Portfolio** es un sitio web de portafolios bien diseñado y totalmente funcional, creado con React.js y Three.js. Es un sitio web totalmente responsivo que funciona bien en todos los dispositivos.
 
-<details><summary><b>Folder Structure</b></summary>
+<details><summary><b>Estructura del Proyecto</b></summary>
 
 ```bash
 reactjs18-3d-portfolio/
@@ -52,19 +35,20 @@ reactjs18-3d-portfolio/
 ├   ├   ├   └── Navbar.tsx
 ├   ├   ├── sections/
 ├   ├   ├   ├── About.tsx
+├   ├   ├   ├── AditionalInfo.tsx
 ├   ├   ├   ├── Contact.tsx
+├   ├   ├   ├── Education.tsx
 ├   ├   ├   ├── Experience.tsx
-├   ├   ├   ├── Feedbacks.tsx
 ├   ├   ├   ├── Hero.tsx
-├   ├   ├   ├── Tech.tsx
 ├   ├   ├   ├── Works.tsx
-├   ├   ├   └── page.tsx
+├   ├   ├   ├── Social.tsx
+├   ├   ├   └── Tech.tsx
 ├   ├   └── index.ts
 ├   ├── constants/
 ├   ├   ├── config.ts
 ├   ├   ├── styles.ts
 ├   ├   └── index.ts
-├   ├── hoc/
+├   ├── hooks/
 ├   ├   ├── SectionWrapper.tsx
 ├   ├   └── index.ts
 ├   ├── utils/
@@ -89,8 +73,7 @@ reactjs18-3d-portfolio/
 ├   ├   ├── license.txt
 ├   ├   ├── scene.bin
 ├   ├   └── scene.gltf
-├   ├── logo.png
-├   └── logo.svg
+├   └── logo.png
 ├── .env
 ├── .eslintignore
 ├── .eslintrc.cjs
@@ -110,84 +93,47 @@ reactjs18-3d-portfolio/
 
 </details>
 
-## 📖 Table of Contents
 
-<details><summary>Table of Contents</summary>
+## ✨ Tecnologias Usadas
 
-- [Live Demo](#-live-demo)
-- [Description](#-description)
-- [Technologies Used](#-technologies-used)
-- [Get Started](#-get-started)
-  - [Prerequisites](#-prerequisites)
-  - [Installation and Run Locally](#-installation-and-run-locally)
-  - [Scripts](#-scripts)
-- [Environment Variables](#-environment-variables)
-- [Deployment](#-deployment)
-  - [Deploy to production (manual)](#-deploy-to-production-manual)
-  - [Deploy on Vercel (recommended)](#-deploy-on-vercel-recommended)
-  - [Deploy on Netlify](#-deploy-on-netlify)
-- [Contributing](#-contributing)
-  - [Bug / Feature Request](#-bug--feature-request)
-- [Acknowledgements](#-acknowledgements)
-- [References](#-references)
-- [Contact Us](#-contact-us)
-- [License](#-license)
+<details><summary><b>3D Portfolio</b> Se construye utilizando las siguientes tecnologías:</summary>
 
-</details>
-
-## ✨ Technologies Used
-
-<details><summary><b>3D Portfolio</b> is built using the following technologies:</summary>
-
-- [TypeScript](https://www.typescriptlang.org/): TypeScript is a typed superset of JavaScript that
-  compiles to plain JavaScript.
-- [Vite](https://vitejs.dev/): Vite is a build tool that aims to provide a faster and leaner
-  development experience for modern web projects.
-- [React.js](https://reactjs.org/): React is a free and open-source front-end JavaScript library for
-  building user interfaces or UI components.
-- [Three.js](https://threejs.org/): Three.js is a cross-browser JavaScript library and application
-  programming interface used to create and display animated 3D computer graphics in a web browser
-  using WebGL.
-- [Framer Motion](https://www.framer.com/motion/): Framer Motion is a production-ready motion
-  library for React.
-- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS is a utility-first CSS framework for
-  rapidly building custom user interfaces.
-- [ESLint](https://eslint.org/): ESLint is a static code analysis tool for identifying problematic
-  patterns found in JavaScript code.
-- [Prettier](https://prettier.io/): Prettier is an opinionated code formatter.
-- [Vercel](https://vercel.com/): Vercel is a cloud platform for frontend developers, providing the
-  frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+- [TypeScript](https://www.typescriptlang.org/): TypeScript es un superconjunto de JavaScript tipado que se compila a JavaScript simple.
+- [Vite](https://vitejs.dev/): Vite es una herramienta de desarrollo que busca proporcionar una experiencia de desarrollo más rápida y eficiente para proyectos web modernos.
+- [React.js](https://reactjs.org/): React es una biblioteca de JavaScript front-end gratuita y de código abierto para crear interfaces de usuario o componentes de interfaz de usuario.
+- [Three.js](https://threejs.org/): Three.js es una biblioteca de JavaScript multiplataforma y una interfaz de programación de aplicaciones que se utiliza para crear y mostrar gráficos de computadora 3D animados en un navegador web mediante WebGL.
+- [Framer Motion](https://www.framer.com/motion/): Framer Motion es una biblioteca de movimiento lista para producción para React.
+- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS es un framework CSS orientado a la utilidad para crear rápidamente interfaces de usuario personalizadas.
+- [ESLint](https://eslint.org/): ESLint es una herramienta de análisis de código estático para identificar patrones problemáticos en código JavaScript.
+- [Prettier](https://prettier.io/): Prettier es un formateador de código con criterio.
+- [Vercel](https://vercel.com/): Vercel es una plataforma en la nube para desarrolladores frontend que proporciona los frameworks, flujos de trabajo e infraestructura necesarios para crear una web más rápida y personalizada.
 
 </details><br/>
 
-[![Technologies Used](https://skillicons.dev/icons?i=ts,vite,react,threejs,tailwind,vercel)](https://skillicons.dev)
+[![Tecnologias Usadas](https://skillicons.dev/icons?i=ts,vite,react,threejs,tailwind,vercel)](https://skillicons.dev)
 
-## 🧰 Get Started
+## 🧰 Para comenzar
 
-To get this project up and running in your development environment, follow these step-by-step
-instructions.
+Para poner en marcha este proyecto en su entorno de desarrollo, siga estas instrucciones paso a paso.
 
-### 📋 Prerequisites
+### 📋 Prerequisitos
 
-In order to install and run this project locally, you would need to have the following installed on
-your local machine.
+Para instalar y ejecutar este proyecto localmente, necesitará tener lo siguiente instalado en su máquina local.
 
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/get-npm)
 - [Git](https://git-scm.com/downloads)
 
-### ⚙️ Installation and Run Locally
+### ⚙️ Instalación e inciar en local
 
 **Step 0:**
 
-Note :bangbang: the application uses EmailJS in order to send emails using client-side, therefore,
-you need to create EmailJS account [here](https://emailjs.com/) and sets the
-`VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, and `VITE_EMAIL_JS_ACCESS_TOKEN` environment
-variables in `.env` file.
+Note :bangbang: la aplicación usa EmailJS para enviar correos electrónicos desde el lado del cliente, 
+por lo tanto, debes crear una cuenta de EmailJS [aquí](https://emailjs.com/) y configurar las variables de entorno
 
 **Step 1:**
 
-Download or clone this repo by using the link below:
+Descargue o clone este repositorio utilizando el siguiente enlace:
 
 ```bash
 git clone https://github.com/ladunjexa/reactjs18-3d-portfolio.git
@@ -195,8 +141,7 @@ git clone https://github.com/ladunjexa/reactjs18-3d-portfolio.git
 
 **Step 2:**
 
-Execute the following command in the root directory of the downloaded repo in order to install
-dependencies:
+Ejecute el siguiente comando en el directorio raíz del repositorio descargado para instalar las dependencias:
 
 ```bash
 npm install
@@ -204,7 +149,7 @@ npm install
 
 **Step 3:**
 
-Execute the following command in order to run the development server locally:
+Ejecute el siguiente comando para ejecutar el servidor de desarrollo localmente:
 
 ```bash
 npm run dev
@@ -212,33 +157,30 @@ npm run dev
 
 **Step 4:**
 
-Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+Abra [http://localhost:5173](http://localhost:5173) con su navegador para ver el resultado.
 
 ### 📜 Scripts
 
-All scripts are defined in the `package.json` file. Here is a list of all scripts:
+Todos los scripts se definen en el archivo `package.json`. A continuación, se muestra una lista completa de todos los scripts:
 
-| Script             | Action                                      |
-| :----------------- | :------------------------------------------ |
-| `npm install`      | Installs dependencies                       |
-| `npm run dev`      | Starts local dev server at `localhost:5137` |
-| `npm run build`    | Build your production site to `./dist/`     |
-| `npm run preview`  | Boot up a local static web server           |
-| `npm run lint`     | Run ESLint                                  |
-| `npm run ts:check` | Perform type-checking                       |
+| Script             | Action                                                      |
+| :----------------- | :---------------------------------------------------------- |
+| `npm install`      | Instala dependencias                                        |
+| `npm run dev`      | Inicia el servidor de desarrollo local en `localhost:5137`  |
+| `npm run build`    | Construye tu sitio de producción en `./dist/`               |
+| `npm run preview`  | Inicia un servidor web estático local                       |
+| `npm run lint`     | Ejecuta ESLint                                              |
+| `npm run ts:check` | Realiza la comprobación de tipos                            |
 
-## 🔒 Environment Variables
+## 🔒 Variables de entorno
 
-Environment variables[^3] can be used for configuration. They must be set before running the app.
+Las variables de entorno [^3] se pueden usar para la configuración. Deben configurarse antes de ejecutar la aplicación.
 
-> [Environment variables](https://en.wikipedia.org/wiki/Environment_variable) are variables that are
-> set in the operating system or shell, typically used to configure programs.
+> Las variables de entorno [https://en.wikipedia.org/wiki/Environment_variable] son ​​variables que se configuran en el sistema operativo o shell, y que suelen usarse para configurar programas.
 
-**React.js 18 3D Portfolio** uses [EmailJS](https://www.emailjs.com/) as external service. You need
-to create an account and get the required credentials to run the app.
+**React.js 18 3D Portfolio** usa [EmailJS](https://www.emailjs.com/) como servicio externo. Debe crear una cuenta y obtener las credenciales necesarias para ejecutar la aplicación.
 
-Create a `.env` file in the root directory of the project and add the following environment
-variables:
+Cree un archivo `.env` en el directorio raíz del proyecto y agregue las siguientes variables de entorno:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=<VITE_EMAILJS_SERVICE_ID>
@@ -246,46 +188,45 @@ VITE_EMAILJS_TEMPLATE_ID=<VITE_EMAILJS_TEMPLATE_ID>
 VITE_EMAIL_JS_ACCESS_TOKEN=<VITE_EMAIL_JS_ACCESS_TOKEN>
 ```
 
-## 🚀 Deployment
+## 🚀 Despliegue
 
-#### Deploy to production (manual)
+#### Despliegue a producción (manual)
 
-You can create an optimized production build with the following command:
+Puede crear una compilación de producción optimizada con el siguiente comando:
 
 ```bash
 npm run build
 ```
 
-#### Deploy on Vercel (recommended)
+#### Despliegue en Vercel (recomendado)
 
-The easiest way to deploy this Next.js app is to use the
+La forma más sencilla de implementar esta aplicación Next.js es usar el
 [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fladunjexa%2Freactjs18-3d-portfolio)
 
-#### Deploy on Netlify
+#### Depliegue en Netlify
 
-You can also deploy this Next.js app with [Netlify](https://www.netlify.com/).
+También puedes implementar esta aplicación Next.js con [Netlify](https://www.netlify.com/).
 
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ladunjexa/reactjs18-3d-portfolio)
 
-Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Consulta la [documentación de implementación de Next.js](https://nextjs.org/docs/deployment) para obtener más detalles.
 
-## 🔧 Contributing
+## 🔧 Contribuciones
 
-[![contributors](https://contrib.rocks/image?repo=ladunjexa/reactjs18-3d-portfolio)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
+[![Contribuidores](https://contrib.rocks/image?repo=ladunjexa/reactjs18-3d-portfolio)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and
-create. Any contributions you make are **greatly appreciated**.
+Las contribuciones son lo que hace de la comunidad de código abierto un lugar increíble para aprender, inspirarse y crear. Cualquier contribución que realices es **muy apreciada**.
 
-To fix a bug or enhance an existing module, follow these steps:
+Para corregir un error o mejorar un módulo existente, sigue estos pasos:
 
-1. Fork the repo
-2. Create a new branch (`git checkout -b improve-feature`)
-3. Make the appropriate changes in the files
-4. Commit your changes (`git commit -am 'Improve feature'`)
-5. Push to the branch (`git push origin improve-feature`)
-6. Create a Pull Request 🎉
+1. Bifurca el repositorio
+2. Crea una nueva rama (`git checkout -b improve-feature`)
+3. Realiza los cambios necesarios en los archivos
+4. Confirma los cambios (`git commit -am 'Improve feature'`)
+5. Sube el repositorio a la rama (`git push origin improve-feature`)
+6. Crea una solicitud de extracción 🎉
 
 ### 📩 Bug / Feature Request
 
