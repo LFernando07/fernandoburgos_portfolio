@@ -6,7 +6,7 @@
 ## 🌐 Live Demo
 
 Explora la demostración en vivo del proyecto:
-[fernando-portafolio](https://fernando-portafolio.vercel.app/)
+[fernando-portafolio](https://fernando-portafolio-iota.vercel.app/)
 
 ## 📝 Descripción
 
