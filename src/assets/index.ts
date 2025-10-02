@@ -31,6 +31,7 @@ import itz from './company/logo-tec-itz.png';
 import icatmor from './company/icatmor.png';
 import cbtis from './company/logo-cbtis.png';
 
+import translator from "./translator.png";
 import gastly from "./gastly.png";
 import weather from "./weather-service.png";
 import jobit from "./jobit.png";
@@ -63,6 +64,7 @@ export {
   threejs,
   weather,
   gastly,
+  translator,
   jobit,
   tripguide,
   scrum,

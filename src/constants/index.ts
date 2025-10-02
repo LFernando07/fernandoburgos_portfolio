@@ -35,7 +35,8 @@ import {
   whatsapp,
   weather,
   demo,
-  gastly
+  gastly,
+  translator
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -271,6 +272,33 @@ const projects: TProject[] = [
     image: weather,
     sourceCodeLink: "https://github.com/LFernando07/Weather_Wrapper_App",
     sourceDemoLink: "https://weather-wrapper-app.vercel.app/",
+    sourceDemoIcon: demo,
+    demo: true,
+  },
+  {
+    name: "Translate-Google-Clone-AI",
+    description: "Aplicación web que permite traducir texto entre varios idiomas utilizando la API de OpenAI. La aplicación ofrece una interfaz sencilla y fácil de usar, similar a la de Google Translate con las funciones de copiar texto y oir la traducción.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openAI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: translator,
+    sourceCodeLink: "https://github.com/LFernando07/translate-google-clone-ai",
+    sourceDemoLink: "https://translate-google-clone-ai.vercel.app/",
     sourceDemoIcon: demo,
     demo: true,
   },
