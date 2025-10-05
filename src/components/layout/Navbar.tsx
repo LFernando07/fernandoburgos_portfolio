@@ -9,7 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState<string | null>();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [useToggle, setUseToggle] = useState(false); // 👈 decide si mostrar hamburguesa
+  const [useToggle, setUseToggle] = useState(false);
 
   const navRef = useRef<HTMLUListElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -46,29 +46,33 @@ const Navbar = () => {
     };
   }, []);
 
-  // 🔹 Detectar si los <li> caben o no
+  // 🔹 Detectar si los <li> caben o no - basado en el ancho de la ventana
   useEffect(() => {
     const checkOverflow = () => {
-      if (navRef.current && containerRef.current) {
-        const navWidth = navRef.current.scrollWidth; // ancho requerido por los li
-        const containerWidth = containerRef.current.offsetWidth; // ancho disponible
-        setUseToggle(navWidth > containerWidth * 0.9); // cuando ya no cabe, usar toggle
+      const windowWidth = window.innerWidth;
+
+      // En pantallas medianas (768px) o más grandes, mostrar navbar normal
+      // En pantallas pequeñas, usar hamburguesa
+      const shouldUseToggle = windowWidth < 768;
+
+      setUseToggle(shouldUseToggle);
+
+      // Cerrar el menú cuando vuelve a modo desktop
+      if (!shouldUseToggle && toggle) {
+        setToggle(false);
       }
     };
 
     checkOverflow();
 
-    const resizeObserver = new ResizeObserver(checkOverflow);
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current);
-    }
+    window.addEventListener('resize', checkOverflow);
 
-    return () => resizeObserver.disconnect();
-  }, []);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, [toggle]);
 
   return (
     <nav
-      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${scrolled ? "bg-primary" : "bg-transparent"
+      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 transition-colors duration-300 ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
     >
       <div
@@ -81,49 +85,47 @@ const Navbar = () => {
           onClick={() => window.scrollTo(0, 0)}
         >
           <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
-          <p className="flex cursor-pointer text-[18px] font-bold text-white ">
+          <p className="flex cursor-pointer text-[18px] font-bold text-white">
             FerDev . _
           </p>
         </Link>
 
-        {/* 🔹 Navbar normal */}
-        {!useToggle && (
-          <ul
-            ref={navRef}
-            className="hidden list-none flex-row gap-10 md:flex"
-          >
-            {navLinks.map((nav) => (
-              <li
-                key={nav.id}
-                className={`${active === nav.id ? "text-white" : "text-secondary"
-                  } cursor-pointer text-[18px] font-medium hover:text-white`}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-        )}
+        {/* 🔹 Navbar normal (pantallas md y superiores) */}
+        <ul
+          ref={navRef}
+          className={`${useToggle ? 'hidden' : 'flex'} list-none flex-row gap-10`}
+        >
+          {navLinks.map((nav) => (
+            <li
+              key={nav.id}
+              className={`${active === nav.id ? "text-white" : "text-gray-300"
+                } cursor-pointer text-[18px] font-medium transition-colors duration-200 hover:text-white`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
 
-        {/* 🔹 Toggle menu (cuando no cabe) */}
+        {/* 🔹 Toggle menu (pantallas pequeñas) */}
         {useToggle && (
           <div className="flex flex-1 items-center justify-end">
             <img
               src={toggle ? close : menu}
               alt="menu"
-              className="h-[28px] w-[28px] object-contain"
+              className="h-[28px] w-[28px] cursor-pointer object-contain transition-transform duration-200 hover:scale-110"
               onClick={() => setToggle(!toggle)}
             />
 
             <div
               className={`${!toggle ? "hidden" : "flex"
-                } black-gradient absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
+                } absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-6 shadow-xl`}
             >
-              <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
+              <ul className="flex flex-1 list-none flex-col items-center justify-center gap-4">
                 {navLinks.map((nav) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins cursor-pointer text-[16px] font-medium ${active === nav.id ? "text-white" : "text-secondary"
-                      }`}
+                    className={`font-poppins cursor-pointer text-[16px] font-medium transition-colors duration-200 ${active === nav.id ? "text-white" : "text-gray-300"
+                      } hover:text-white`}
                     onClick={() => setToggle(!toggle)}
                   >
                     <a href={`#${nav.id}`}>{nav.title}</a>

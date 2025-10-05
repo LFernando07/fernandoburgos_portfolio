@@ -34,8 +34,6 @@ import cbtis from './company/logo-cbtis.png';
 import translator from "./translator.png";
 import gastly from "./gastly.png";
 import weather from "./weather-service.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   logo,
@@ -65,8 +63,6 @@ export {
   weather,
   gastly,
   translator,
-  jobit,
-  tripguide,
   scrum,
   itz,
   icatmor,

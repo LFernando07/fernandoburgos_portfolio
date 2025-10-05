@@ -23,9 +23,9 @@ const Hero = () => {
             {config.hero.p[0]} <br className="hidden sm:block" />
             {config.hero.p[1]}
           </p>
-          <div className="mt-6 z-20 relative">
+          <div className="mt-4 z-20 relative">
             <a
-              href="/CV_FernandoBurgos.pdf" // coloca tu archivo CV en la carpeta public con este nombre
+              href="/CV_FernandoBurgos.pdf"
               download
               className="inline-block rounded-xl bg-[#915EFF] px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105 hover:bg-[#7a49d6]"
             >
