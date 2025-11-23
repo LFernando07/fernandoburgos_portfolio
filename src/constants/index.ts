@@ -29,6 +29,7 @@ import {
   icatmor,
   sigecu,
   cbtis,
+  amelie,
   linkedin,
   github,
   telefono,
@@ -36,6 +37,7 @@ import {
   weather,
   demo,
   gastly,
+  posamelie,
   translator
 } from "../assets";
 
@@ -170,6 +172,20 @@ const experiences: TExperience[] = [
       "Conversión de documentos físicos a formato digital aplicando criterios de clasificación temática."
     ],
   },
+  {
+    title: "Aplicación de Escritorio POS",
+    companyName: " Heladería Amalie Miacatlán",
+    icon: amelie,
+    iconBg: "#383E56",
+    date: "Agosto - Noviembre 2025",
+    points: [
+      "Desarrollé de manera colaborativa una aplicación de escritorio en Electrón con frontend y backend desacoplados.",
+      "Implementé el módulo de autenticación y autorización basada en roles diferenciando acceso entre adiministrador y empleados.",
+      "Desarrollé la gestión completa de usuarios, productos y categorías, permitiendo un control administrativo eficiente.",
+      "Construí la interfaz del punto de venta (POS) con capacidad de escalar hacia la generación de tickets.",
+      "Optimicé la creación de reportes semanales en PDF, utilizando plantillas automatizadas para su descarga o envío por correo.",
+    ],
+  },
 ];
 
 const schools: TEducation[] = [
@@ -202,7 +218,8 @@ const additional: TAditional = {
   languages: ["Inglés (B1)"],
   certifications: [
     "Scrum Fundamentals Certified",
-    "Responsive Web Design (freeCodeCamp)"
+    "Responsive Web Design (freeCodeCamp)",
+    "Educathon de IA | Jornada Universitaria (IBM)",
   ],
   softSkills: [
     "Proactividad",
@@ -327,6 +344,30 @@ const projects: TProject[] = [
     image: gastly,
     sourceCodeLink: "https://github.com/LFernando07/Expense-Tracker",
   },
+  {
+    name: "POS Heladería Amelie",
+    description: "Sistema Punto de Venta de escritorio para la gestión integral de una heladería, permitiendo administrar productos, categorías, sabores, ventas y usuarios de manera rápida y eficiente.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sqlite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "electron",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: posamelie,
+    sourceCodeLink: "https://github.com/LFernando07/pos-heladeria-amalie",
+  }
 ]
 
 export { services, technologies, experiences, schools, additional, projects, socials };

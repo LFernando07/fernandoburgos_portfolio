@@ -30,9 +30,11 @@ import sigecu from './tech/sigecu.png';
 import itz from './company/logo-tec-itz.png';
 import icatmor from './company/icatmor.png';
 import cbtis from './company/logo-cbtis.png';
+import amelie from './company/logo_amelie.png';
 
 import translator from "./translator.png";
 import gastly from "./gastly.png";
+import posamelie from "./heladeria_amelie.png";
 import weather from "./weather-service.png";
 
 export {
@@ -62,11 +64,13 @@ export {
   threejs,
   weather,
   gastly,
+  posamelie,
   translator,
   scrum,
   itz,
   icatmor,
   sigecu,
   cbtis,
+  amelie,
   demo
 };
