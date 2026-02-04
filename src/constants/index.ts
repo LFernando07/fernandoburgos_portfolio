@@ -218,8 +218,11 @@ const additional: TAditional = {
   languages: ["Inglés (B1)"],
   certifications: [
     "Scrum Fundamentals Certified",
-    "Responsive Web Design (freeCodeCamp)",
-    "Educathon de IA | Jornada Universitaria (IBM)",
+    "Legacy Resposive Web Design V8 (freeCodeCamp)",
+    "Educathon de IA (IBM)",
+    "Claude Code in Action (Anthropic Academy)",
+    "Introduction to Model Context Protocol (Anthropic Academy)",
+    "Model Context Protocol: Advanced Topics (Anthropic Academy)"
   ],
   softSkills: [
     "Proactividad",
