@@ -6,7 +6,7 @@ import { additional } from "../../constants";
 const AdditionalInfo: React.FC<TAditional> = () => {
   return (
     <>
-      <h2 className="sm:text-[36px] text-[24px] text-center mb-8 text-secondary tracking-widers">{additional.name}</h2>
+      <h2 className="sm:text-[36px] text-[24px] text-center mb-8 text-white font-bold tracking-widers">{additional.name}</h2>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {/* Idiomas */}
         <div className="flex flex-col rounded-2xl bg-[#1d1836] p-6 shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">
@@ -23,7 +23,11 @@ const AdditionalInfo: React.FC<TAditional> = () => {
           <h3 className="text-xl font-bold text-white">📜 Certificaciones</h3>
           <ul className="mt-4 list-disc pl-5 text-sm text-gray-300 space-y-2">
             {additional.certifications.map((cert, i) => (
-              <li key={i}>{cert}</li>
+              <li key={i}>
+                <a href={cert.certificateLink} target="_blank" rel="noopener noreferrer" className="text-white-400 hover:underline">
+                  {cert.name}
+                </a>
+              </li>
             ))}
           </ul>
         </div>

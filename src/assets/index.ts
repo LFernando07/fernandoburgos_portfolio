@@ -26,16 +26,26 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import scrum from './tech/scrum.png';
 import sigecu from './tech/sigecu.png';
+import nest from './tech/nest.webp';
+import postgres from './tech/postgresql.png';
+import express from './tech/express.png';
+import django from './tech/django.webp';
+import claude from './tech/claudeAI.webp';
+import azure from './tech/azure.png';
+import angular from './tech/angular.png';
+
 
 import itz from './company/logo-tec-itz.png';
 import icatmor from './company/icatmor.png';
 import cbtis from './company/logo-cbtis.png';
 import amelie from './company/logo_amelie.png';
+import beecker from './company/beecker.png';
 
 import translator from "./translator.png";
 import gastly from "./gastly.png";
 import posamelie from "./heladeria_amelie.png";
 import weather from "./weather-service.png";
+import checkoutcore from "./checkout_core.png"
 
 export {
   logo,
@@ -56,6 +66,7 @@ export {
   html,
   javascript,
   mongodb,
+  beecker,
   nodejs,
   reactjs,
   redux,
@@ -66,11 +77,19 @@ export {
   gastly,
   posamelie,
   translator,
+  angular,
+  nest,
+  postgres,
+  express,
+  django,
+  claude,
+  azure,
   scrum,
   itz,
   icatmor,
   sigecu,
   cbtis,
   amelie,
-  demo
+  demo,
+  checkoutcore,
 };

@@ -19,9 +19,13 @@ export type TEducation = {
   achievements: string[];
 } & Required<Omit<TCommonProps, "name">>;
 
+export type TCertification = {
+  name: string;
+  certificateLink: string;
+};
 export type TAditional = {
   languages: string[];
-  certifications: string[];
+  certifications: TCertification[];
   softSkills: string[];
   availability: string;
 } & Required<Pick<TCommonProps, "name">>;

@@ -26,7 +26,7 @@ import {
   figma,
   scrum,
   itz,
-  icatmor,
+  // icatmor,
   sigecu,
   cbtis,
   amelie,
@@ -38,7 +38,16 @@ import {
   demo,
   gastly,
   posamelie,
-  translator
+  translator,
+  beecker,
+  checkoutcore,
+  angular,
+  express,
+  nest,
+  postgres,
+  django,
+  azure,
+  claude,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -70,16 +79,32 @@ const services: TService[] = [
     icon: web,
   },
   {
-    title: "Gestión de Base de Datos",
-    icon: backend,
-  },
-  {
     title: "Backend Developer",
     icon: mobile,
   },
   {
+    title: "Gestión de Base de Datos",
+    icon: backend,
+  },
+  {
     title: "Diseño de Interfaces",
     icon: creator,
+  },
+  {
+    title: "Automatización RPA",
+    icon: creator,
+  },
+  {
+    title: "Inteligencia Artificial Generativa",
+    icon: backend,
+  },
+  {
+    title: "Cloud & DevOps (Azure)",
+    icon: web,
+  },
+  {
+    title: "Arquitectura de Software",
+    icon: mobile,
   },
 ];
 
@@ -105,6 +130,10 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
+    name: "Angular JS",
+    icon: angular,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -117,37 +146,61 @@ const technologies: TTechnology[] = [
     icon: nodejs,
   },
   {
+    name: "Express JS",
+    icon: express,
+  },
+  {
+    name: "NestJS",
+    icon: nest,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "scrum",
+    name: "Scrum",
     icon: scrum,
-  }
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Azure DevOps",
+    icon: azure,
+  },
+  {
+    name: "Claude AI",
+    icon: claude,
+  },
 ];
 
 const experiences: TExperience[] = [
-  {
-    title: "Servicio Social",
-    companyName: "ICATMOR Anenecuilco – Área de Recursos Materiales y Financieros",
-    icon: icatmor,
-    iconBg: "#383E56",
-    date: "Enero – Junio 2020",
-    points: [
-      "Elaboración de más de 200 pólizas contables para cuentas institucionales usando Excel avanzado.",
-      "Gestión de inventarios con un 100% de precisión en registros.",
-      "Generación de balances mensuales para programas educativos.",
-      "Optimización de procesos de auditoría logrando reducir tiempos en un 30%."
-    ],
-  },
+  // {
+  //   title: "Servicio Social",
+  //   companyName: "ICATMOR Anenecuilco – Área de Recursos Materiales y Financieros",
+  //   icon: icatmor,
+  //   iconBg: "#383E56",
+  //   date: "Enero – Junio 2020",
+  //   points: [
+  //     "Elaboración de más de 200 pólizas contables para cuentas institucionales usando Excel avanzado.",
+  //     "Gestión de inventarios con un 100% de precisión en registros.",
+  //     "Generación de balances mensuales para programas educativos.",
+  //     "Optimización de procesos de auditoría logrando reducir tiempos en un 30%."
+  //   ],
+  // },
   {
     title: "Sistema de Gestión de Cursos",
     companyName: "Instituto Tecnológico de Zacatepec",
@@ -160,18 +213,18 @@ const experiences: TExperience[] = [
       "Optimización de procesos administrativos con reducción del 40% en tiempos de gestión.",
     ],
   },
-  {
-    title: "Servicio Social - Área de Apoyo al Tecnológico",
-    companyName: "Instituto Tecnológico de Zacatepec",
-    icon: itz,
-    iconBg: "#383E56",
-    date: "Enero – Junio 2025",
-    points: [
-      "Administración de plataformas tecnológicas educativas utilizando Microsoft Teams.",
-      "Implementación de una estructura organizacional para asesorías académicas.",
-      "Conversión de documentos físicos a formato digital aplicando criterios de clasificación temática."
-    ],
-  },
+  // {
+  //   title: "Servicio Social - Área de Apoyo al Tecnológico",
+  //   companyName: "Instituto Tecnológico de Zacatepec",
+  //   icon: itz,
+  //   iconBg: "#383E56",
+  //   date: "Enero – Junio 2025",
+  //   points: [
+  //     "Administración de plataformas tecnológicas educativas utilizando Microsoft Teams.",
+  //     "Implementación de una estructura organizacional para asesorías académicas.",
+  //     "Conversión de documentos físicos a formato digital aplicando criterios de clasificación temática."
+  //   ],
+  // },
   {
     title: "Aplicación de Escritorio POS",
     companyName: " Heladería Amalie Miacatlán",
@@ -186,6 +239,36 @@ const experiences: TExperience[] = [
       "Optimicé la creación de reportes semanales en PDF, utilizando plantillas automatizadas para su descarga o envío por correo.",
     ],
   },
+  {
+    title: "Automatización RPA — Udemy + Google Drive",
+    companyName: "New York Beecker Consulting S.A. DE C.V. ",
+    icon: beecker,
+    iconBg: "#E3E6F1",
+    date: "Enero - Junio 2026",
+    points: [
+      "Diseñe e implemente robot RPA con arquitectura doble REFramework que automatizo al 100% la descarga de facturas desde Udemy y su almacenamiento estructurado en Google Drive.",
+      "Desarrolle 4 módulos independientes reduciendo tiempo estimado de mantenimiento futuro en 60% respecto a arquitectura monolítica.",
+      "Implemente autenticación 2FA automática vía extracción de OTP desde Gmail, eliminando 100% la intervención manual en el proceso de Login.",
+      "Identifiqué y resolví error critico de rutas en Edge que bloqueaba el flujo completo; validado sobre facturas reales de cuenta corporativa.",
+    ],
+  },
+  {
+    title: "Proyecto Genesis — Chatbot con IA + Plataforma Web",
+    companyName: "New York Beecker Consulting S.A. DE C.V. ",
+    icon: beecker,
+    iconBg: "#D1D4E1",
+    date: "Enero - Junio 2026",
+    points: [
+      "Lideré equipo Scrum (3 devs), distribuyendo tareas y logrando 100% de cumplimiento en sprints.",
+      "Diseñé e implementé backend en Django + ORM, integrando asistente con Claude API + Batch, reduciendo consumo de tokens ~40%.",
+      "Construí el frontend con React.js: módulos de autenticación, dashboard administrativo, gestión de usuarios/roles, vista de chatbot y manejo de errores.",
+      "Administré servidor UAT y productivo en Azure, asegurando despliegues estables y disponibilidad continua.",
+      "Gestione base de datos PostgreSQL en entorno local y productivo, incluyendo migraciones y consultas ORM optimizadas.",
+      "Desarrollé prompts maestros y pipeline PDD, procesando +150 proyectos y generando JSON estructurados para poblar la Base de Datos.",
+      "Clasifique +150 sistemas por proyecto apoyando la priorización del backlog y contemplando sus change requests.",
+      "Configure repositorio Git con estrategia de branching por modulo.",
+    ],
+  },
 ];
 
 const schools: TEducation[] = [
@@ -194,7 +277,7 @@ const schools: TEducation[] = [
     icon: itz,
     iconBg: "#383E56",
     degree: "Ingeniería en Sistemas Computacionales, Especialidad en Desarrollo de Aplicaciones Multiplataforma",
-    dateRange: "Agosto 2021 - Presente",
+    dateRange: "Agosto 2021 - Junio 2026",
     subject: "Asignaturas clave:",
     achievements: [
       "Ingeniería de Software", "Bases de Datos", "Desarrollo Web", "Aplicaciones Móviles", "Desarrollo Multiplataforma con .NET"
@@ -215,14 +298,40 @@ const schools: TEducation[] = [
 
 const additional: TAditional = {
   name: "Información Adicional",
-  languages: ["Inglés (B1)"],
+  languages: ["Español (Nativo)", "Inglés (B1)"],
   certifications: [
-    "Scrum Fundamentals Certified",
-    "Legacy Resposive Web Design V8 (freeCodeCamp)",
-    "Educathon de IA (IBM)",
-    "Claude Code in Action (Anthropic Academy)",
-    "Introduction to Model Context Protocol (Anthropic Academy)",
-    "Model Context Protocol: Advanced Topics (Anthropic Academy)"
+    {
+      name: "UiPath Automation Developer Professional",
+      certificateLink: "https://credentials.uipath.com/a8f5624e-f809-4598-9fdd-cc85df60c3b4",
+    },
+    {
+      name: "Blue Prism: Foundations (SS&C)",
+      certificateLink: "",
+    },
+    {
+      name: "Automation Anywhere — Essentials Professional",
+      certificateLink: "https://certificates.automationanywhere.com/5776c53a-a41a-4142-af5f-b7bd9b345676",
+    },
+    {
+      name: "Scrum Fundamentals Certified",
+      certificateLink: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-LuisFernandoBurgosPerea-1103341.pdf",
+    },
+    {
+      name: "Introduction to MCP",
+      certificateLink: "https://verify.skilljar.com/c/a95635hei2gg",
+    },
+    {
+      name: "MCP: Advanced Topics",
+      certificateLink: "https://verify.skilljar.com/c/6c6eeqcywyzb",
+    },
+    {
+      name: "Claude Code in Action",
+      certificateLink: "https://verify.skilljar.com/c/9y7x9emrsrpf",
+    },
+    {
+      name: "Educathon de IA",
+      certificateLink: "",
+    }
   ],
   softSkills: [
     "Proactividad",
@@ -370,7 +479,32 @@ const projects: TProject[] = [
     ],
     image: posamelie,
     sourceCodeLink: "https://github.com/LFernando07/pos-heladeria-amalie",
-  }
+  },
+  {
+    name: "CheckoutCore Microservices",
+    description:
+      "Sistema backend basado en arquitectura de microservicios orientada a eventos para gestionar el flujo completo de una compra: creación de órdenes, procesamiento de pagos y notificación al usuario, de forma desacoplada, escalable y resiliente.",
+    tags: [
+      {
+        name: "NestJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RabbitMQ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: checkoutcore,
+    sourceCodeLink: "https://github.com/LFernando07/checkoutcore-microservices",
+  },
 ]
 
 export { services, technologies, experiences, schools, additional, projects, socials };

@@ -21,6 +21,8 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
+          </p>
+          <p className={`${styles.heroSubText} text-white-100 mt-2 animate-bounce`}>
             {config.hero.p[1]}
           </p>
           <div className="mt-4 z-20 relative">

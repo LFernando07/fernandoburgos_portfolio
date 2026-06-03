@@ -5,7 +5,7 @@ const Social = () => {
 
   return (
     <div className="flex flex-wrap flex-row-reverse justify-center p-16 gap-16 rounded-lg">
-      <div className="text-center text-md text-gray-500 pl-16 mt-4">
+      <div className="text-center text-md flex text-gray-500 p-2 mt-4">
         <p>&copy; {config.html.fullName} Todos los derechos reservados.</p>
       </div>
 

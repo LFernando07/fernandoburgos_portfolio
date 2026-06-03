@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Fernando Burgos",
-    p: ["Ingeniero en Sistemas Computacionales", "Desarrollo Multiplataforma"],
+    p: ["Ingeniero en Sistemas Computacionales", "Full-Stack Developer + IA Generativa "],
   },
   contact: {
     p: "Envia correo",
@@ -67,13 +67,7 @@ export const config: TConfig = {
     about: {
       p: "Introducción",
       h2: "Descripción General.",
-      content: `"Estudiante de Ingeniería en Sistemas Computacionales con formación
-       en Desarrollo de Aplicaciones Multiplataforma. Manejo de Java, Python, C#, 
-       JavaScript y experiencia en desarrollo de aplicaciones web utilizando Node.js, 
-       ExpressJS y React. 
-       Manejo de bases de datos relacionales y no relacionales (MySQL, PostgreSQL, MongoDB) 
-       y certificación en metodologías ágiles (Scrum). Me apasiona crear soluciones web modernas, 
-       rápidas y escalables."`,
+      content: `"Ingeniero en Sistemas Computacionales con experiencia práctica en desarrollo full-stack, automatización de procesos (RPA) e integración de inteligencia artificial generativa. Lidere equipo de desarrollo en entorno productivo, entregando una plataforma web completa con backend Django, frontend React y agente IA integrado bajo presupuesto y metodología Scrum. Cuento con certificaciones activas en UiPath, Blue Prism y Automation Anywhere, además de dominio de APIs de Claude Anthropic y despliegue en Azure. Me adapto rápidamente a nuevas tecnologías, comunicación efectiva con equipos multidisciplinarios y orientación a resultados medibles."`,
     },
     experience: {
       p: "Lo que he hecho hasta ahora",
@@ -85,8 +79,8 @@ export const config: TConfig = {
     },
     works: {
       p: "Mi Trabajo",
-      h2: "Projectos.",
-      content: `Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos académicos y reales de mi trabajo. Cada proyecto se describe brevemente con enlaces a repositorios de código. Esto refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos eficazmente.`,
+      h2: "Proyectos.",
+      content: `Los siguientes proyectos reflejan mi trayectoria y experiencia profesional como Ingeniero en Sistemas. Cada proyecto incluye una breve descripción y enlace a su repositorio, evidenciando mi capacidad para desarrollar soluciones reales, trabajar con tecnologías modernas y gestionar proyectos de principio a fin`,
     },
   },
 };
