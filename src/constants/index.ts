@@ -48,6 +48,7 @@ import {
   django,
   azure,
   claude,
+  portafolio_movil,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -504,6 +505,31 @@ const projects: TProject[] = [
     ],
     image: checkoutcore,
     sourceCodeLink: "https://github.com/LFernando07/checkoutcore-microservices",
+  },
+  {
+    name: "Portafolio Movil",
+    description:
+      "Aplicación móvil nativa multiplataforma para la visualización de mi perfil profesional, trayectoria y certificaciones, diseñada detalladamente con una interfaz moderna, animaciones interactivas de alto rendimiento y conectividad en tiempo real.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "EmailJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portafolio_movil,
+    sourceCodeLink: "https://github.com/LFernando07/fernandoburgos-portfolio-movil",
   },
 ]
 
