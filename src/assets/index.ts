@@ -47,6 +47,7 @@ import posamelie from "./heladeria_amelie.png";
 import weather from "./weather-service.png";
 import checkoutcore from "./checkout_core.png"
 import portafolio_movil from "./portafolio_movil.png"
+import dulce_locura from "./dulce_locura.png"
 
 export {
   logo,
@@ -93,5 +94,6 @@ export {
   amelie,
   demo,
   checkoutcore,
-  portafolio_movil
+  portafolio_movil,
+  dulce_locura
 };

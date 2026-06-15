@@ -49,6 +49,7 @@ import {
   azure,
   claude,
   portafolio_movil,
+  dulce_locura,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -189,19 +190,6 @@ const technologies: TTechnology[] = [
 ];
 
 const experiences: TExperience[] = [
-  // {
-  //   title: "Servicio Social",
-  //   companyName: "ICATMOR Anenecuilco – Área de Recursos Materiales y Financieros",
-  //   icon: icatmor,
-  //   iconBg: "#383E56",
-  //   date: "Enero – Junio 2020",
-  //   points: [
-  //     "Elaboración de más de 200 pólizas contables para cuentas institucionales usando Excel avanzado.",
-  //     "Gestión de inventarios con un 100% de precisión en registros.",
-  //     "Generación de balances mensuales para programas educativos.",
-  //     "Optimización de procesos de auditoría logrando reducir tiempos en un 30%."
-  //   ],
-  // },
   {
     title: "Sistema de Gestión de Cursos",
     companyName: "Instituto Tecnológico de Zacatepec",
@@ -214,18 +202,6 @@ const experiences: TExperience[] = [
       "Optimización de procesos administrativos con reducción del 40% en tiempos de gestión.",
     ],
   },
-  // {
-  //   title: "Servicio Social - Área de Apoyo al Tecnológico",
-  //   companyName: "Instituto Tecnológico de Zacatepec",
-  //   icon: itz,
-  //   iconBg: "#383E56",
-  //   date: "Enero – Junio 2025",
-  //   points: [
-  //     "Administración de plataformas tecnológicas educativas utilizando Microsoft Teams.",
-  //     "Implementación de una estructura organizacional para asesorías académicas.",
-  //     "Conversión de documentos físicos a formato digital aplicando criterios de clasificación temática."
-  //   ],
-  // },
   {
     title: "Aplicación de Escritorio POS",
     companyName: " Heladería Amalie Miacatlán",
@@ -530,6 +506,34 @@ const projects: TProject[] = [
     ],
     image: portafolio_movil,
     sourceCodeLink: "https://github.com/LFernando07/fernandoburgos-portfolio-movil",
+  },
+  {
+    name: "Dulce Locura Landing Page",
+    description:
+      "Landing page para negocio de postres artesanales con carta de 23 productos, animaciones GSAP + Framer Motion, scroll suavizado con Lenis, integración de enlaces hacia redes sociales y WhatsApp y deploy en Vercel.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ThreeJs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: dulce_locura,
+    sourceCodeLink: "https://github.com/LFernando07/dulce-locura-landingpage",
+    sourceDemoLink: "https://dulcelocura.ferdev.dev",
+    sourceDemoIcon: demo,
+    demo: true,
   },
 ]
 
