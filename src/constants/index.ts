@@ -50,6 +50,8 @@ import {
   claude,
   portafolio_movil,
   dulce_locura,
+  ragstore,
+  logo_dulcelocura
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -246,6 +248,17 @@ const experiences: TExperience[] = [
       "Configure repositorio Git con estrategia de branching por modulo.",
     ],
   },
+  {
+    title: "Landing Page Interactiva — Freelance",
+    companyName: " Dulce Locura. ",
+    icon: logo_dulcelocura,
+    iconBg: "#D1D4E1",
+    date: "May 2026 – Jun 2026 ",
+    points: [
+      "Desarrollé una landing page de alto impacto visual con menús dinámicos filtrados y animaciones avanzadas (parallax, clip-path reveals y spring physics) manteniendo un rendimiento óptimo de carga. ",
+      "Integré pasarela de contacto segura con EmailJS y lógica condicional temporal para promociones de temporada. "
+    ],
+  },
 ];
 
 const schools: TEducation[] = [
@@ -328,7 +341,7 @@ const socials = [
     name: "linkedIn",
     icon: linkedin,
     bgText: "#1d1836",
-    ref: "https://www.linkedin.com/in/luis-fernando-burgos-perea-406196382/",
+    ref: "http://linkedin.com/in/fernandoburgosperea/",
   },
   {
     name: "Github",
@@ -353,6 +366,158 @@ const socials = [
 
 
 const projects: TProject[] = [
+  {
+    name: "RAG E-Commerce",
+    description:
+      "Sistema de comercio electrónico con arquitectura RAG. Integra búsqueda semántica vectorial, memoria conversacional, caché semántico para optimización de costos y defensas robustas de seguridad pre-LLM.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NestJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Gemini AI",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: ragstore,
+    sourceCodeLink: "https://github.com/LFernando07/RAG-E-Commerce",
+  },
+  {
+    name: "CheckoutCore Microservices",
+    description:
+      "Sistema backend basado en arquitectura de microservicios orientada a eventos para gestionar el flujo completo de una compra: creación de órdenes, procesamiento de pagos y notificación al usuario, de forma desacoplada, escalable y resiliente.",
+    tags: [
+      {
+        name: "NestJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RabbitMQ",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: checkoutcore,
+    sourceCodeLink: "https://github.com/LFernando07/checkoutcore-microservices",
+  },
+  {
+    name: "POS Heladería Amelie",
+    description: "Sistema Punto de Venta de escritorio para la gestión integral de una heladería, permitiendo administrar productos, categorías, sabores, ventas y usuarios de manera rápida y eficiente.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sqlite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "electron",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: posamelie,
+    sourceCodeLink: "https://github.com/LFernando07/pos-heladeria-amalie",
+  },
+  {
+    name: "Dulce Locura Landing Page",
+    description:
+      "Landing page para negocio de postres artesanales con carta de 23 productos, animaciones GSAP + Framer Motion, scroll suavizado con Lenis, integración de enlaces hacia redes sociales y WhatsApp y deploy en Vercel.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ThreeJs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: dulce_locura,
+    sourceCodeLink: "https://github.com/LFernando07/dulce-locura-landingpage",
+    sourceDemoLink: "https://dulcelocura.ferdev.dev",
+    sourceDemoIcon: demo,
+    demo: true,
+  },
+  {
+    name: "Portafolio Movil",
+    description:
+      "Aplicación móvil nativa multiplataforma para la visualización de mi perfil profesional, trayectoria y certificaciones, diseñada detalladamente con una interfaz moderna, animaciones interactivas de alto rendimiento y conectividad en tiempo real.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "EmailJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portafolio_movil,
+    sourceCodeLink: "https://github.com/LFernando07/fernandoburgos-portfolio-movil",
+  },
+  {
+    name: "Gastly App",
+    description:
+      "Aplicación web para el control y manejo de gastos personales, permitiendo registrar, filtrar, visualizar los gastos apartir de una tabla y de graficas (barra, metricas y de pastel) de forma sencilla y rápida.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: gastly,
+    sourceCodeLink: "https://github.com/LFernando07/Expense-Tracker",
+  },
   {
     name: "Weather Wrapper App",
     description:
@@ -408,133 +573,7 @@ const projects: TProject[] = [
     sourceDemoIcon: demo,
     demo: true,
   },
-  {
-    name: "Gastly App",
-    description:
-      "Aplicación web para el control y manejo de gastos personales, permitiendo registrar, filtrar, visualizar los gastos apartir de una tabla y de graficas (barra, metricas y de pastel) de forma sencilla y rápida.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "prisma",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: gastly,
-    sourceCodeLink: "https://github.com/LFernando07/Expense-Tracker",
-  },
-  {
-    name: "POS Heladería Amelie",
-    description: "Sistema Punto de Venta de escritorio para la gestión integral de una heladería, permitiendo administrar productos, categorías, sabores, ventas y usuarios de manera rápida y eficiente.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sqlite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "electron",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "express",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: posamelie,
-    sourceCodeLink: "https://github.com/LFernando07/pos-heladeria-amalie",
-  },
-  {
-    name: "CheckoutCore Microservices",
-    description:
-      "Sistema backend basado en arquitectura de microservicios orientada a eventos para gestionar el flujo completo de una compra: creación de órdenes, procesamiento de pagos y notificación al usuario, de forma desacoplada, escalable y resiliente.",
-    tags: [
-      {
-        name: "NestJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RabbitMQ",
-        color: "green-text-gradient",
-      },
-      {
-        name: "PostgreSQL",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Docker",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: checkoutcore,
-    sourceCodeLink: "https://github.com/LFernando07/checkoutcore-microservices",
-  },
-  {
-    name: "Portafolio Movil",
-    description:
-      "Aplicación móvil nativa multiplataforma para la visualización de mi perfil profesional, trayectoria y certificaciones, diseñada detalladamente con una interfaz moderna, animaciones interactivas de alto rendimiento y conectividad en tiempo real.",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Expo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "EmailJs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: portafolio_movil,
-    sourceCodeLink: "https://github.com/LFernando07/fernandoburgos-portfolio-movil",
-  },
-  {
-    name: "Dulce Locura Landing Page",
-    description:
-      "Landing page para negocio de postres artesanales con carta de 23 productos, animaciones GSAP + Framer Motion, scroll suavizado con Lenis, integración de enlaces hacia redes sociales y WhatsApp y deploy en Vercel.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TailwindCss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "GSAP",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ThreeJs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: dulce_locura,
-    sourceCodeLink: "https://github.com/LFernando07/dulce-locura-landingpage",
-    sourceDemoLink: "https://dulcelocura.ferdev.dev",
-    sourceDemoIcon: demo,
-    demo: true,
-  },
+
 ]
 
 export { services, technologies, experiences, schools, additional, projects, socials };

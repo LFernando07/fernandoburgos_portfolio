@@ -40,12 +40,14 @@ import icatmor from './company/icatmor.png';
 import cbtis from './company/logo-cbtis.png';
 import amelie from './company/logo_amelie.png';
 import beecker from './company/beecker.png';
+import logo_dulcelocura from './company/logo-dulce-locura.png';
 
 import translator from "./translator.png";
 import gastly from "./gastly.png";
 import posamelie from "./heladeria_amelie.png";
 import weather from "./weather-service.png";
 import checkoutcore from "./checkout_core.png"
+import ragstore from "./rag_store.png"
 import portafolio_movil from "./portafolio_movil.png"
 import dulce_locura from "./dulce_locura.png"
 
@@ -95,5 +97,7 @@ export {
   demo,
   checkoutcore,
   portafolio_movil,
-  dulce_locura
+  dulce_locura,
+  logo_dulcelocura,
+  ragstore
 };
